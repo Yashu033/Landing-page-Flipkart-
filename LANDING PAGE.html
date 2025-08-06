@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f1f3f6;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #2874f0;
+      padding: 15px;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .search {
+      width: 40%;
+      padding: 8px;
+      border-radius: 2px;
+      border: none;
+    }
+
+    .login-btn {
+      background-color: #fff;
+      color: #2874f0;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .category {
+      text-align: center;
+      margin: 10px;
+      width: 100px;
+    }
+
+    .category img {
+      width:120px;
+      height:120px;
+    }
+
+    .category p {
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* Banner */
+    .banner img {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    /* Product Section */
+    .products {
+      background-color: white;
+      padding: 20px;
+      margin-top: 10px;
+    }
+
+    .products h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .product-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product {
+      background-color: #f9f9f9;
+      width: 180px;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .product p {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .product span {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2874f0;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Landing Page</div>
+    <input type="text" class="search" placeholder="Search for products, brands and more">
+    <button class="login-btn">Login</button>
+    <a href="#" class="nav-link">Become a Seller</a>
+    <a href="#" class="nav-link">More</a>
+    <a href="#" class="nav-link">Cart</a>
+  </header>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="category">
+      <img src="https://www.bbassets.com/media/uploads/p/l/40094923_13-nutella-hazelnut-spread-with-cocoa.jpg" alt="Grocery">
+      <p>Grocery</p>
+    </div>
+    <div class="category">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium?wid=5120&hei=2880&fmt=webp&qlt=90&.v=eUdsd0dIb3VUOXdtWkY0VFUwVE8vbEdkZHNlSjBQRklnaFB2d3I5MW94Nm1neGR3bXRIczEyZHc4WTk0RkR4VEY3eHJKR1hDaEJCS2hmc2czazlldHlSTUMybCtXNXZpclhWeFpYZUcvRk9MMGVHUi8weFBYOEFFYUZVbWVJS0xsOE8xQ2Rxc3QzeElocmgrcU1DbFJn&traceId=1" alt="Mobiles">
+      <p>Mobiles</p>
+    </div>
+    <div class="category">
+      <img src="https://vaanicreation.in/cdn/shop/files/473Wx593H-467342750-yellow-MODEL.jpg?v=1725098387" alt="Fashion">
+      <p>Fashion</p>
+    </div>
+    <div class="category">
+      <img src="https://m.media-amazon.com/images/I/71XA0QCW5lL._SX679_.jpg" alt="Electronics">
+      <p>Electronics</p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets.business.amazon.com/assets/in/24th-jan/705_Website_Blog_Appliances_2880x960.jpg.transform/2880x960/image.jpg" alt="Appliances">
+      <p>Appliances</p>
+    </div>
+</section>
+  <section class="products">
+    <h2>Deals of the Day</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://images-cdn.ubuy.co.in/679b57fd37f5522290355102-samsung-galaxy-s25-ultra-sm-s938b-ds.jpg" alt="Samsung Galaxy">
+        <p>Samsung Galaxy</p>
+        <span>₹15,999</span>
+      </div>
+      <div class="product">
+        <img src="https://images-cdn.ubuy.co.in/64c41e4771c5f52216163af1-hp-stream-14-laptop-intel-celeron.jpg" alt="HP Laptop">
+        <p>HP Laptop</p>
+        <span>₹45,499</span>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrhVVaYqcA9fLV_FLuCqpbJYTuVR3dShaQw&s" alt="Smartwatch">
+        <p>Smartwatch</p>
+        <span>₹2,999</span>
+      </div>
+      <div class="product">
+        <img src="https://www.gonoise.com/cdn/shop/files/4.620.png?v=1750266842" alt="Earbuds">
+        <p>Wireless Earbuds</p>
+        <span>₹1,299</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy;Shopping made simple – because you deserve it.</p>
+  </footer>
+
+</body>
+</html>
